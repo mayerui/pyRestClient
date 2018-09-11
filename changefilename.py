@@ -15,7 +15,7 @@ newtime=time.strftime("%Y%m%d-%H:%M:%S.000", time.localtime(time.time()))
 header=header.replace(oldtime, newtime, 1)
 lines[0]=header
 
-file = open(path, 'w')
+file = open(path, 'w', newline='\n')
 file.writelines(lines)
 file.close()
 
