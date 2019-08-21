@@ -34,7 +34,7 @@ change_inside_time('mktdt00.txt')
 change_inside_time('mktdt01.txt')
 change_inside_time('mktdt03.txt')
 
-#¸ÄÎÄ¼şÃû
+#æ”¹æ–‡ä»¶å
 os.chdir(workspace)
 fileList=os.listdir(workspace)
 for fileName in fileList:
@@ -77,7 +77,7 @@ for fileName in fileList:
         os.rename(fileName, pattern[0] + MM+DD+'.txt')
         break
 
-#»¦Â×Í¨
+#æ²ªä¼¦é€š
 for fileName in fileList:
     pat_list = ['se018cdr*',  'se053pqccbglj*','se038gdrjbxx*','se060gdrjbxx*']
     for pat in pat_list:
