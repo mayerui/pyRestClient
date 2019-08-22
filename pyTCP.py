@@ -21,11 +21,19 @@ for fileName in fileList:
         dataList.append(data)
 
 while 1:
-    for i in range(0, len(dataList)):
+    try:
+        for i in range(0, len(dataList)):
+            s.send(dataList[i])    
         s.send(dataList[i])    
-        data = s.recv(1024)
-        print(bytes(data))
-    
-    #time.sleep(0.01)
+            s.send(dataList[i])    
+            time.sleep(1)
+            data = s.recv(1024)
+            print(bytes(data))
+        
+        time.sleep(5)
+    except ConnectionResetError:
+        s.close()
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.connect(address)
     
 s.close()
