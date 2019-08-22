@@ -24,8 +24,6 @@ while 1:
     try:
         for i in range(0, len(dataList)):
             s.send(dataList[i])    
-        s.send(dataList[i])    
-            s.send(dataList[i])    
             time.sleep(1)
             data = s.recv(1024)
             print(bytes(data))
