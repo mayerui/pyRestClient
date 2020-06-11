@@ -9,7 +9,7 @@ if len(sys.argv) > 2:
     print(path)
 if len(sys.argv) > 3:
     sort_col = int(sys.argv[3])
-    print(sort_sol)
+    print(sort_col)
 
 lines = list()
 with open(path, 'r') as f:
