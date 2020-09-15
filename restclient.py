@@ -1,8 +1,5 @@
 from urllib import request
 import json
-import hashlib
-import base64
-import sys
 
 #修改全局参数即可
 #使用方法：在cmd中输入命令 python 绝对路径\restclient.py
