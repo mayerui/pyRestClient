@@ -12,7 +12,7 @@ import logging
 
 url = "http://127.0.0.1:0000/downloads/"
 dst_path = "./download/"
-file_list = ["block.xml"]
+file_list = [""]
 
 
 def download():
