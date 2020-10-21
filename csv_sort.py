@@ -3,7 +3,7 @@ import sys
 import csv
 
 sort_col = [3, 1]
-path = "D:/工具/winner_protocol_test/workspace.x64/response/1/192.168.36.237_7988_MarketMonitorEventQuery.csv"
+path = ""
 if len(sys.argv) > 2:
     path = sys.argv[1]
     print(path)
